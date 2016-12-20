@@ -1,0 +1,10 @@
+# IDE files
+.idea
+.vscode
+
+# Packages
+node_modules
+
+# Generated files
+coverage
+dist
