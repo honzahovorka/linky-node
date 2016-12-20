@@ -1,10 +1,9 @@
 import Koa from 'koa'
+import routes from './routes'
 
 const app = new Koa()
 
-app.use(ctx => {
-  ctx.body = 'Hello, world!'
-})
+app.use(routes)
 
 app.start = () => app.listen(3000)
 
