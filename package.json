@@ -5,7 +5,7 @@
   "main": "dist/src/server.js",
   "scripts": {
     "start": "node .",
-    "dev": "./node_modules/.bin/gulp watch",
+    "dev": "./node_modules/.bin/gulp watch | ./node_modules/.bin/bunyan -o short",
     "test": "./node_modules/.bin/gulp compile && mocha --recursive -w dist/tests/"
   },
   "author": "Honza Hovorka <honza.hovorka@gmail.com>",
@@ -15,6 +15,7 @@
     "url": "git://github.com/honzahovorka/linky-node.git"
   },
   "dependencies": {
+    "bunyan": "^1.8.5",
     "koa": "^2.0.0",
     "koa-router": "^7.0.1"
   },
