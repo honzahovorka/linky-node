@@ -46,6 +46,6 @@ gulp.task('lint', () =>
 
 gulp.task('watch', ['compile'], () => nodemon({
   script: paths.runScript,
-  watch: paths.srcDir,
+  watch: paths.sources,
   tasks: ['compile'],
 }))
